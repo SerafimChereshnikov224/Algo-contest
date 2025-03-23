@@ -7,8 +7,11 @@ public class S2 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        String str = scanner.nextLine();
-        System.out.println(solve(Integer.parseInt(str)));
+        String count = scanner.nextLine();
+        for(int i = 0;i < Integer.parseInt(count);i++) {
+            String num = scanner.nextLine();
+            System.out.println(solve(Integer.parseInt(num)));
+        }
     }
 
     public static int solve(int num) {
